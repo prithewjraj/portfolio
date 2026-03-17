@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color: grey;
+    text-decoration: underline;
+    text-underline-offset: 0.5rem;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+#s-nav {
+    display: none;
+}
+
+/* Hero Section */
+#profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    height: 80vh;
+}
+
+.profile-pic img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+.profile-text h1 {
+    font-size: 3rem;
+}
+
+.profile-text h2 {
+    font-weight: 400;
+    color: gray;
+}
+
+.btn-container {
+    margin-top: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.btn {
+    padding: 0.8rem 1.4rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+}
+
+.btn-outline {
+    border: 2px solid black;
+    background: none;
+}
+
+.btn-filled {
+    background: black;
+    color: white;
+    border: none;
+}
+
+/* Sections */
+section {
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+/* Experience */
+.experience-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.exp-card {
+    padding: 1rem 2rem;
+    border: 1px solid black;
+    border-radius: 1rem;
+}
+
+/* Projects */
+.projects-container {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.project-card {
+    border: 1px solid black;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 300px;
+    height: 400px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #f2f2f2;
+}

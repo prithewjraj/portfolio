@@ -8,10 +8,12 @@
 
 body {
     font-family: "Poppins", sans-serif;
+    color: white;
 }
 
 html {
     scroll-behavior: smooth;
+    background-color: rgb(18, 2, 46);
 }
 
 nav {
@@ -30,15 +32,14 @@ nav {
 
 a {
     text-decoration: none;
-    color: black;
+    color: white;
 }
 
 a:hover {
-    color: grey;
+    color: rgb(207, 156, 26);
     text-decoration: underline;
     text-underline-offset: 0.5rem;
 }
-
 .logo {
     font-size: 2rem;
     font-weight: 600;
@@ -85,12 +86,12 @@ a:hover {
 }
 
 .btn-outline {
-    border: 2px solid black;
+    border: 2px solid rgb(196, 147, 23) ;
     background: none;
 }
 
 .btn-filled {
-    background: black;
+    background: rgb(187, 138, 15);
     color: white;
     border: none;
 }
@@ -112,12 +113,14 @@ section {
     justify-content: center;
     gap: 2rem;
     margin-top: 2rem;
+    
 }
 
 .exp-card {
     padding: 1rem 2rem;
-    border: 1px solid black;
+    border: 1px solid rgb(148, 110, 16);
     border-radius: 1rem;
+    box-shadow: 0 0 10px rgb(226, 179, 59);
 }
 
 /* Projects */
@@ -128,13 +131,30 @@ section {
     margin-top: 2rem;
 }
 
+
 .project-card {
-    border: 1px solid black;
-    padding: 2rem;
-    border-radius: 1rem;
-    width: 300px;
-    height: 400px;
+    outline: 2px solid transparent;
+    outline-offset: 0;
+    transition: 
+        outline-color 0.25s ease,
+        outline-offset 0.25s ease,
+        box-shadow 0.25s ease;
+    width: 500px;
+    height: 300px;
+    border-radius: 1cm;
+    
+
 }
+
+.project-card:hover {
+    
+    outline-color: goldenrod;
+    outline-offset: 0;   
+    box-shadow: 0 0 50px rgb(226, 179, 59);
+    transform: scale(1.08);
+    
+}
+
 
 /* Footer */
 footer {

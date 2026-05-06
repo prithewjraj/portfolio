@@ -86,7 +86,7 @@
     width: 95%;
     height: 480px;       /* Slightly taller to cover stacked mobile content */
     margin-left: 2.5%;   
-    margin-top: 250px;   /* Push down below the mobile menu */
+    margin-top: 260px;   /* Push down below the mobile menu */
   }
 
   .btn-container {

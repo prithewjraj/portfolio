@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=VT323&display=swap");
 
 * {
     margin: 0;
@@ -7,9 +7,23 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
-    color: white;
+    font-family: 'VT323', monospace;
+    color: #1a828a;
+    font-size: 30px;
+    text-shadow: 0 0 50px rgb(189, 236, 255);
 }
+#myVideo {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  z-index: -1; 
+  filter: brightness(0.4);
+  object-fit: cover; /* Ensures the video covers the screen without stretching */
+}
+
+/* Ensure the body doesn't have a background blocking the video */
 
 html {
     scroll-behavior: smooth;
@@ -133,15 +147,11 @@ section {
 
 
 .project-card {
-    outline: 2px solid transparent;
-    outline-offset: 0;
-    transition: 
-        outline-color 0.25s ease,
-        outline-offset 0.25s ease,
-        box-shadow 0.25s ease;
+    outline: 2px solid #1a828a;
     width: 500px;
-    height: 300px;
+    height: 370px;
     border-radius: 1cm;
+    
     
 
 }
@@ -161,4 +171,20 @@ footer {
     text-align: center;
     padding: 1rem;
     background: #f2f2f2;
+}
+
+#crt-noise-vid {
+    position: absolute;
+    margin-top: 10%;
+    margin-left: 25%;
+    top: 0;
+    left: 0;
+    width: 800px;
+    height: 550px;
+    object-fit: cover; /* Ensures video fills the screen without stretching */
+    opacity: 0.3; /* Adjust this for subtle or strong noise */
+    z-index: 1;
+    pointer-events: none;
+    border: 3px solid #1a828a;
+    border-radius: 1cm;
 }

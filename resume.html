@@ -1,13 +1,206 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prithew J Raj | Portfolio</title>
+    <title>Prithew J Raj - Resume</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background: #f4f6f8;
+            color: #222;
+        }
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+        .resume {
+            max-width: 900px;
+            margin: 30px auto;
+            background: #ffffff;
+            display: flex;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        /* LEFT PANEL */
+        .left {
+            width: 30%;
+            background: #0b1d2d;
+            color: #ffffff;
+            padding: 25px;
+        }
+
+        .left h3 {
+            border-bottom: 1px solid #4fa3ff;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            color: #4fa3ff;
+        }
+
+        .left p, .left a {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .skills li {
+            margin-bottom: 8px;
+            font-size: 14px;
+        }
+
+        /* RIGHT PANEL */
+        .right {
+            width: 70%;
+            padding: 30px;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 32px;
+            color: #0b5ed7;
+        }
+
+        .header h2 {
+            margin: 5px 0 20px;
+            font-size: 18px;
+            font-weight: normal;
+            color: #444;
+        }
+
+        .section {
+            margin-bottom: 25px;
+        }
+
+        .section h3 {
+            color: #0b5ed7;
+            border-bottom: 2px solid #0b5ed7;
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+
+        .section p, .section li {
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 18px;
+        }
+
+        .small {
+            color: #666;
+            font-size: 14px;
+        }
+    </style>
 </head>
 <body>
-    <img src="resumecv.png" alt="resume">
+
+<div class="resume">
+
+    <!-- LEFT SECTION -->
+    <div class="left">
+
+        <h3>CONTACT</h3>
+        <p>📞 9074346921</p>
+        <p>✉️ prithewjraj@gmail.com</p>
+        <p>📍 Kerala, India</p>
+
+        <h3>SOCIAL LINKS</h3>
+        <p><a href="https://linkedin.com/in/prithewjraj" target="_blank">LinkedIn</a></p>
+        <p><a href="https://github.com/prithewjraj" target="_blank">GitHub</a></p>
+
+        <h3>SKILLS</h3>
+        <div class="skills">
+            <ul>
+                <li><strong>Frontend:</strong> HTML, CSS, JavaScript, React.js, Tailwind CSS</li>
+                <li><strong>Backend:</strong> Node.js, Express.js, Python, REST APIs</li>
+                <li><strong>Database:</strong> MongoDB, MySQL</li>
+                <li><strong>Tools:</strong> Git & GitHub, VS Code, Docker (Basics), Postman, Figma (Basics)</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <!-- RIGHT SECTION -->
+    <div class="right">
+
+        <div class="header">
+            <h1>PRITHEW J RAJ</h1>
+            <h2>Full-stack Developer</h2>
+            <p>
+                Motivated and detail-oriented Full-stack Developer with a strong foundation
+                in building responsive web applications and RESTful APIs.
+                Passionate about clean code and solving real-world problems.
+            </p>
+        </div>
+
+        <div class="section">
+            <h3>EDUCATION</h3>
+            <p><strong>Bachelor of Technology – Computer Science and Engineering</strong></p>
+            <p class="small">XYZ Institute of Technology (2022 – 2026)</p>
+            <p>CGPA: 8.45 / 10.00</p>
+
+            <p><strong>Higher Secondary (12th)</strong></p>
+            <p class="small">Board of Higher Secondary Education, Kerala (2020 – 2022)</p>
+            <p>Percentage: 93.2%</p>
+
+            <p><strong>Secondary (10th)</strong></p>
+            <p class="small">Board of Public Examinations, Kerala (2020)</p>
+            <p>Percentage: 95.4%</p>
+        </div>
+
+        <div class="section">
+            <h3>EXPERIENCE</h3>
+            <p><strong>Full-stack Developer Intern – CodeAlpha</strong></p>
+            <p class="small">May 2024 – Jul 2024</p>
+            <ul>
+                <li>Developed and maintained responsive web applications using MERN stack.</li>
+                <li>Built and integrated RESTful APIs.</li>
+                <li>Collaborated with designers and developers to ship features.</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>PROJECTS</h3>
+            <ul>
+                <li>
+                    <strong>Task Manager Web App</strong> – MERN Stack  
+                    <br>Authentication and CRUD operations using React, Node.js, Express, MongoDB, JWT.
+                </li>
+                <li>
+                    <strong>E-commerce Website</strong> – MERN Stack  
+                    <br>Product filtering, cart, checkout, and payment integration.
+                </li>
+                <li>
+                    <strong>Portfolio Website</strong> – HTML, CSS, JavaScript  
+                    <br>Personal portfolio with AOS animations.
+                </li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>CERTIFICATIONS</h3>
+            <ul>
+                <li>Full Stack Web Development – Udemy (2024)</li>
+                <li>JavaScript Algorithms and Data Structures – freeCodeCamp (2024)</li>
+                <li>Responsive Web Design – freeCodeCamp (2023)</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h3>ACHIEVEMENTS</h3>
+            <ul>
+                <li>Solved 300+ problems on LeetCode</li>
+                <li>Participated in hackathons and team projects</li>
+                <li>Consistently maintained excellent academic performance</li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
 </body>
+</html>
